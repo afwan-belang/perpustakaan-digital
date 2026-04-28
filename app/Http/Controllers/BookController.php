@@ -14,7 +14,8 @@ class BookController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('books.create', compact('categories'));
+        // Arahkan ke folder pages/books/
+        return view('pages.books.create', compact('categories'));
     }
 
     // 2. Menyimpan Data ke Database & Storage
@@ -54,7 +55,8 @@ class BookController extends Controller
     {
         $book = Book::findOrFail($id);
         $categories = Category::all();
-        return view('books.edit', compact('book', 'categories'));
+        // Arahkan ke folder pages/books/
+        return view('pages.books.edit', compact('book', 'categories'));
     }
 
     // 4. Proses Update Data

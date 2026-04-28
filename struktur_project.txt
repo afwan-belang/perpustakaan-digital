@@ -1,0 +1,257 @@
+.
+├── app
+│   ├── Http
+│   │   ├── Controllers
+│   │   │   ├── Auth
+│   │   │   │   ├── AuthenticatedSessionController.php
+│   │   │   │   ├── ConfirmablePasswordController.php
+│   │   │   │   ├── EmailVerificationNotificationController.php
+│   │   │   │   ├── EmailVerificationPromptController.php
+│   │   │   │   ├── NewPasswordController.php
+│   │   │   │   ├── PasswordController.php
+│   │   │   │   ├── PasswordResetLinkController.php
+│   │   │   │   ├── RegisteredUserController.php
+│   │   │   │   └── VerifyEmailController.php
+│   │   │   ├── BookController.php
+│   │   │   ├── Controller.php
+│   │   │   ├── HomeController.php
+│   │   │   └── ProfileController.php
+│   │   ├── Middleware
+│   │   │   └── IsAdmin.php
+│   │   └── Requests
+│   │       ├── Auth
+│   │       │   └── LoginRequest.php
+│   │       └── ProfileUpdateRequest.php
+│   ├── Models
+│   │   ├── Book.php
+│   │   ├── Category.php
+│   │   └── User.php
+│   ├── Providers
+│   │   └── AppServiceProvider.php
+│   └── View
+│       └── Components
+│           ├── AppLayout.php
+│           └── GuestLayout.php
+├── artisan
+├── bootstrap
+│   ├── app.php
+│   ├── cache
+│   │   ├── .gitignore
+│   │   ├── packages.php
+│   │   └── services.php
+│   └── providers.php
+├── composer.json
+├── composer.lock
+├── config
+│   ├── app.php
+│   ├── auth.php
+│   ├── cache.php
+│   ├── database.php
+│   ├── filesystems.php
+│   ├── logging.php
+│   ├── mail.php
+│   ├── queue.php
+│   ├── services.php
+│   └── session.php
+├── database
+│   ├── database.sqlite
+│   ├── factories
+│   │   └── UserFactory.php
+│   ├── .gitignore
+│   ├── migrations
+│   │   ├── 0001_01_01_000000_create_users_table.php
+│   │   ├── 0001_01_01_000001_create_cache_table.php
+│   │   ├── 0001_01_01_000002_create_jobs_table.php
+│   │   ├── 2026_02_04_052813_create_categories_table.php
+│   │   ├── 2026_02_04_052836_create_books_table.php
+│   │   └── 2026_02_11_034031_add_role_to_users_table.php
+│   └── seeders
+│       └── DatabaseSeeder.php
+├── .editorconfig
+├── .env
+├── .env.example
+├── .gitattributes
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── phpunit.xml
+├── postcss.config.js
+├── public
+│   ├── build
+│   │   ├── assets
+│   │   │   ├── app-BEvSG6V1.css
+│   │   │   └── app-CBbTb_k3.js
+│   │   └── manifest.json
+│   ├── favicon.ico
+│   ├── .htaccess
+│   ├── index.php
+│   ├── robots.txt
+│   └── storage -> /home/afwan_belang/Projects/BelajarPHP/buku-digital/storage/app/public
+├── README.md
+├── resources
+│   ├── css
+│   │   └── app.css
+│   ├── js
+│   │   ├── app.js
+│   │   └── bootstrap.js
+│   └── views
+│       ├── auth
+│       │   ├── confirm-password.blade.php
+│       │   ├── forgot-password.blade.php
+│       │   ├── login.blade.php
+│       │   ├── register.blade.php
+│       │   ├── reset-password.blade.php
+│       │   └── verify-email.blade.php
+│       ├── books
+│       │   ├── create.blade.php
+│       │   └── edit.blade.php
+│       ├── components
+│       │   ├── application-logo.blade.php
+│       │   ├── auth-session-status.blade.php
+│       │   ├── danger-button.blade.php
+│       │   ├── dropdown.blade.php
+│       │   ├── dropdown-link.blade.php
+│       │   ├── input-error.blade.php
+│       │   ├── input-label.blade.php
+│       │   ├── modal.blade.php
+│       │   ├── nav-link.blade.php
+│       │   ├── primary-button.blade.php
+│       │   ├── responsive-nav-link.blade.php
+│       │   ├── secondary-button.blade.php
+│       │   └── text-input.blade.php
+│       ├── dashboard.blade.php
+│       ├── layouts
+│       │   ├── app.blade.php
+│       │   ├── guest.blade.php
+│       │   └── navigation.blade.php
+│       ├── profile
+│       │   ├── edit.blade.php
+│       │   └── partials
+│       │       ├── delete-user-form.blade.php
+│       │       ├── update-password-form.blade.php
+│       │       └── update-profile-information-form.blade.php
+│       └── welcome.blade.php
+├── routes
+│   ├── auth.php
+│   ├── console.php
+│   └── web.php
+├── storage
+│   ├── app
+│   │   ├── .gitignore
+│   │   ├── private
+│   │   │   └── .gitignore
+│   │   └── public
+│   │       ├── books
+│   │       │   ├── BIPq87c92u1mfsV7MpER5dINlB83mGsxZbu2wH7S.pdf
+│   │       │   ├── l71BRhkzKa3hDvkQpARYKBMjgDa62sYIQD6hW27Q.pdf
+│   │       │   ├── nLKQigYr9tXgDpl6vambtxStzEuxVAkRUGd1xIzx.pdf
+│   │       │   ├── swnnHDjwowb1wFesr7ChoR3cn3QgTlsR75roxbWJ.pdf
+│   │       │   └── vq8Pmaz1QN27kGVu4xZ6vFTYh4nx0KJDgLkuEmjH.pdf
+│   │       ├── covers
+│   │       │   ├── 6y2IWAQWcscJ4j6Op4B7Q5RJZHZpte3ko0o92luT.jpg
+│   │       │   ├── ItL1O8Cms5Lft1Oh1DK3Y6n9hmLRW7woW9Bz9tTa.jpg
+│   │       │   ├── k8jPuJRYRDxj0p3CEdVhna2JnGtE1XlKY6UCjnJt.jpg
+│   │       │   ├── t6DBBUG24NzTwySCfT7WPbkTkJpanU4bmw41luqp.jpg
+│   │       │   └── wr5PCfhbJK650hsZ3xEMIY4UB7yyZ4M2Nl7l1Dfd.jpg
+│   │       └── .gitignore
+│   ├── framework
+│   │   ├── cache
+│   │   │   ├── data
+│   │   │   │   └── .gitignore
+│   │   │   └── .gitignore
+│   │   ├── .gitignore
+│   │   ├── sessions
+│   │   │   └── .gitignore
+│   │   ├── testing
+│   │   │   └── .gitignore
+│   │   └── views
+│   │       ├── 06a979b2e141a3e14a51991779ed09e9.php
+│   │       ├── 090efb4c5843d3116e501d727fbd0e0f.php
+│   │       ├── 0bad2addf5cdc6e818ac07725d30780e.php
+│   │       ├── 0fa15e4bc0a4657e9aea7b6614c3a66a.php
+│   │       ├── 12f1768ec3557e6efc44f25ff8e5fb11.php
+│   │       ├── 16a90d1e25418c9443d654624d58e88e.php
+│   │       ├── 1787455297b18f0b1a6605457577377d.php
+│   │       ├── 198311850e8aabd29c32e05cbb991e72.php
+│   │       ├── 2440676b09cd5434f893880a9bdbfe3e.php
+│   │       ├── 27019f9f4a07fefcf36f8a0fe4157ff5.php
+│   │       ├── 2ace69f16a51c5f43309a32683fb5c29.php
+│   │       ├── 305b1de0edf07a67379f4e1733218b0c.php
+│   │       ├── 31f3ddca6d1726bb9bebc38479b35578.php
+│   │       ├── 3777387c31450bd59b0bbdfbb71d76c1.php
+│   │       ├── 401108fd045e92e9ab305bb377093bd9.php
+│   │       ├── 40f33b47f08eafa4a972bdf97f3e6674.php
+│   │       ├── 420de81224e8aeaacf2fb83636ac607d.php
+│   │       ├── 43027794dabd0fb0ef3c20ac7b7a1afc.php
+│   │       ├── 43c09dac6ebce9b5570839ef26eae741.php
+│   │       ├── 44159cf58b9ca15dd72df95d892bb486.php
+│   │       ├── 449438609486f8ec8e3176f2d096fdcc.php
+│   │       ├── 486f0ddff1bfa174cdad047d5576438d.php
+│   │       ├── 4b5904dab175af82095d05200fc90975.php
+│   │       ├── 5001e3ca57e41f6dfac8426dca039daf.php
+│   │       ├── 525ff7fb7484c2640046e62d97406839.php
+│   │       ├── 5575d7f914f1ea88704f49f03cadf5a7.php
+│   │       ├── 5b5bc2c790df8087f14b1c146e257b7a.php
+│   │       ├── 5df612a1ac63f100f2a106d2f2599f5a.php
+│   │       ├── 60717e03298cdd6225599bc6a93dde1f.php
+│   │       ├── 608e919a3047763f02eb219124910c9b.php
+│   │       ├── 622b14af370f5f6f8593c377d97deb00.php
+│   │       ├── 6ba3659da12c468d2d4bb6b39e3840fe.php
+│   │       ├── 6d340b4471ce0e4d3f90d37c1f815d13.php
+│   │       ├── 7233be68e57da96308e982f3fd205199.php
+│   │       ├── 76518991ab01c812ef5055a2202875ff.php
+│   │       ├── 76d2ccc4096b490061f681d2218bb834.php
+│   │       ├── 798389a0674bcc642f904d784c9f3c2e.php
+│   │       ├── 7ef541e5dd8e96a6c532e1377dfe0b98.php
+│   │       ├── 8201dcaf1e1535a57987cad13fe6c10a.php
+│   │       ├── 846441d7a1164fd033aea2fddc0c020a.php
+│   │       ├── 8560ce97ffe68640b54a59a5f1c450f6.php
+│   │       ├── 87692dbb0e801dbdc9d0d3b91c6133a1.php
+│   │       ├── 885d0f93a1806607e4382435ebed4a96.php
+│   │       ├── 8ebce78a2c606f3e2a3cf2da66402f50.php
+│   │       ├── 8ecc7aa10698d57162a8f610e8b333ed.php
+│   │       ├── 8f529df749a7d156607335d86fc4b144.php
+│   │       ├── 943873956908645eb637c047a4bacf89.php
+│   │       ├── 95fac3c52a55c1b9e1e347b82b4055df.php
+│   │       ├── 9870ed67dd1d7c708ae31386dc385f68.php
+│   │       ├── 9ad2be8ccea1a4eeb5adf6359f36f526.php
+│   │       ├── a1cae57511ed733593983e35d057e958.php
+│   │       ├── a1d969f8240856bb445c0ed01266dad2.php
+│   │       ├── a97b3d6388a27a84c11a083baffde454.php
+│   │       ├── ace151ae34d7d48c35c7bc1aaa16616e.php
+│   │       ├── b0224b2b92e72ae993245c40d5e93f98.php
+│   │       ├── b94879f0fb63b15322c45fe3fb263f73.php
+│   │       ├── c78ec6048c2a5171c4f67977c6b1585e.php
+│   │       ├── cf1bffb6a1ea1d9479b58521716b77f8.php
+│   │       ├── cfd956a2ce0fe7a1360a3afd899a3dd1.php
+│   │       ├── d16102d2a536620e0d138cecfcdb5f93.php
+│   │       ├── d2e4be2d725ab045e2d1bcd5e8feb010.php
+│   │       ├── dd73dcd0304a3e7bcc306c9b7020b3cb.php
+│   │       ├── e89a4df091ebfb7948a667f42d67aed7.php
+│   │       ├── f787f759872433a9c185e63572c9c7c0.php
+│   │       ├── fb3a4aafe024f692061f99caf7a4626e.php
+│   │       ├── fb72fff0468d3b5797ccfd81359e414b.php
+│   │       ├── ff0c52d6622982a1b0179bd460932e60.php
+│   │       └── .gitignore
+│   └── logs
+│       ├── .gitignore
+│       └── laravel.log
+├── struktur_project.txt
+├── tailwind.config.js
+├── tests
+│   ├── Feature
+│   │   ├── Auth
+│   │   │   ├── AuthenticationTest.php
+│   │   │   ├── EmailVerificationTest.php
+│   │   │   ├── PasswordConfirmationTest.php
+│   │   │   ├── PasswordResetTest.php
+│   │   │   ├── PasswordUpdateTest.php
+│   │   │   └── RegistrationTest.php
+│   │   ├── ExampleTest.php
+│   │   └── ProfileTest.php
+│   ├── TestCase.php
+│   └── Unit
+│       └── ExampleTest.php
+└── vite.config.js
+
+51 directories, 204 files
