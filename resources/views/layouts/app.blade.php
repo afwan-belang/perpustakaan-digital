@@ -27,27 +27,25 @@
     @stack('scripts')
 
     <script>
-        // 1. Cek memori browser atau preferensi sistem pengguna
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-
-        // 2. Fungsi membalik keadaan (Light <-> Dark)
-        function toggleTheme() {
+        // 1. Fungsi Utama (Didaftarkan ke window agar PASTI terbaca oleh onclick)
+        window.toggleTheme = function() {
             const html = document.documentElement;
+            
+            // Paksa membalik class 'dark'
+            html.classList.toggle('dark');
+            
+            // Simpan pilihan ke memori browser
             if (html.classList.contains('dark')) {
-                html.classList.remove('dark');
-                localStorage.theme = 'light';
-            } else {
-                html.classList.add('dark');
                 localStorage.theme = 'dark';
+            } else {
+                localStorage.theme = 'light';
             }
+            
+            // Update ikon
             updateIcon();
-        }
+        };
 
-        // 3. Fungsi membalik icon Sun / Moon (Menggunakan classList, BUKAN style)
+        // 2. Fungsi Update Ikon
         function updateIcon() {
             const isDark = document.documentElement.classList.contains('dark');
             const sun = document.getElementById('iconSun');
@@ -63,9 +61,16 @@
                 }
             }
         }
-        
-        // Jalankan update ikon saat halaman pertama dirender
-        document.addEventListener('DOMContentLoaded', updateIcon);
+
+        // 3. Setel tema saat halaman pertama kali dibuka
+        document.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+            updateIcon();
+        });
     </script>
 </body>
 </html>

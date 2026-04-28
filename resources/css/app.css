@@ -1,4 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@custom-variant dark (&:where(.dark, .dark *));
+@import "tailwindcss";
+
+/* Ini adalah baris ajaib untuk mengaktifkan class="dark" di Tailwind v4 */
+@variant dark (&:is(.dark *));
