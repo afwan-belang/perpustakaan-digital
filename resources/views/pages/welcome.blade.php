@@ -2,8 +2,8 @@
 
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
         <div>
-            <h1 class="text-4xl font-bold text-slate-900 dark:text-white tracking-tight mb-2">Jelajahi Pustaka</h1>
-            <p class="text-slate-600 dark:text-slate-400">Temukan wawasan baru dari koleksi buku digital kami.</p>
+            <h1 class="text-4xl font-bold text-slate-900 dark:text-white tracking-tight mb-2">Perpustakaan Digital</h1>
+            <p class="text-slate-600 dark:text-slate-400">Luaskan wawasan pemikiran dan pertajam pikiran</p>
         </div>
 
         <div class="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">

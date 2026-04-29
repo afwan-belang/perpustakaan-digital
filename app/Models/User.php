@@ -45,4 +45,10 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    // Relasi untuk Buku Favorit
+    // Relasi untuk Buku Favorit
+    public function favorites()
+    {
+        return $this->belongsToMany(Book::class, 'favorites')->withTimestamps();
+    }
 }

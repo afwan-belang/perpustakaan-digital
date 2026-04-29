@@ -1,2 +1,2 @@
 @props(['disabled' => false])
-<textarea {{ $disabled ? 'disabled' : '' }} {!! $attributes->merge(['class' => 'w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-900 text-slate-200 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-300 placeholder-slate-500']) !!}>{{ $slot }}</textarea>
+<textarea {{ $disabled ? 'disabled' : '' }} {!! $attributes->merge(['class' => 'w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-300 placeholder:text-slate-400 dark:placeholder:text-slate-500 shadow-sm dark:shadow-none']) !!}>{{ $slot }}</textarea>
