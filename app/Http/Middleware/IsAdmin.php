@@ -4,22 +4,22 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
 class IsAdmin
 {
+    /**
+     * Handle an incoming request.
+     */
     public function handle(Request $request, Closure $next): Response
     {
-        // Cek 1: Apakah user sudah login?
-        if (! $request->user()) {
-            return redirect()->route('login');
+        // Cek apakah user yang login memiliki role 'admin'
+        if (Auth::check() && Auth::user()->role === 'admin') {
+            return $next($request); // Silakan lewat
         }
 
-        // Cek 2: Apakah role-nya BUKAN admin?
-        if ($request->user()->role !== 'admin') {
-            abort(403, 'ANDA BUKAN ADMIN!'); 
-        }
-
-        return $next($request);
+        // Jika user biasa mencoba masuk, tendang dengan pesan error 403 Forbidden
+        abort(403, 'Akses Ditolak. Halaman ini khusus Administrator.');
     }
 }
