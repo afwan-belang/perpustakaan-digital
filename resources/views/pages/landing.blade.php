@@ -47,9 +47,11 @@
 </head>
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden selection:bg-indigo-500 selection:text-white transition-colors duration-300">
 
+    <!-- NAVBAR -->
     <nav class="fixed w-full z-50 top-0 transition-all duration-300 backdrop-blur-md bg-white/70 dark:bg-slate-950/70 border-b border-slate-200/50 dark:border-slate-800/50">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center gap-2">
                     <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/30">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
@@ -57,11 +59,13 @@
                     <span class="font-bold text-xl tracking-tight">DigiLib<span class="text-indigo-600 dark:text-indigo-400">SMK</span></span>
                 </div>
 
+                <!-- Autentikasi / Link Dashboard -->
                 <div class="flex items-center gap-4">
                     @auth
                         <a href="{{ route('home') }}" class="text-sm font-semibold bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-full shadow-md shadow-indigo-500/20 transition hover:-translate-y-0.5">Ke Dashboard</a>
                     @else
                         <a href="{{ route('login') }}" class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Sign In</a>
+                        <a href="{{ route('register') }}" class="text-sm font-semibold bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-full shadow-md shadow-indigo-500/20 transition hover:-translate-y-0.5">Sign Up</a>
                     @endauth
                 </div>
             </div>
@@ -245,52 +249,5 @@
         </p>
     </footer>
 
-    <script type="module">
-        import createGlobe from 'https://esm.sh/cobe@0.6.3';
-
-        const canvas = document.getElementById("cobe");
-        const isDarkMode = document.documentElement.classList.contains('dark');
-        
-        let phi = 0;
-        let width = 0;
-
-        const onResize = () => {
-            if (canvas) {
-                width = canvas.offsetWidth;
-            }
-        };
-
-        window.addEventListener('resize', onResize);
-        onResize();
-
-        const globe = createGlobe(canvas, {
-            devicePixelRatio: 2,
-            width: width * 2,
-            height: width * 2,
-            phi: 0,
-            theta: 0.3,
-            dark: isDarkMode ? 1 : 0,
-            diffuse: 1.2,
-            mapSamples: 16000,
-            mapBrightness: 6,
-            baseColor: [1, 1, 1], // Putih dasar untuk benua
-            markerColor: [0.39, 0.40, 0.94], // Indigo untuk marker
-            glowColor: isDarkMode ? [0.15, 0.15, 0.2] : [0.9, 0.9, 0.9],
-            markers: [
-                { location: [-6.9147, 107.6098], size: 0.1 } // Lokasi Bandung
-            ],
-            onRender: (state) => {
-                state.phi = phi;
-                phi += 0.003;
-                state.width = width * 2;
-                state.height = width * 2;
-            }
-        });
-
-        // Efek Fade-in saat globe siap (Mencegah kedipan hitam)
-        setTimeout(() => {
-            canvas.style.opacity = '1';
-        }, 100);
-    </script>
 </body>
 </html>
