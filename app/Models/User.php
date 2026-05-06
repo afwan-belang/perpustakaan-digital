@@ -52,4 +52,9 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Book::class, 'favorites')->withTimestamps();
     }
+    // Relasi: User memiliki banyak riwayat peminjaman
+    public function borrowings()
+    {
+        return $this->hasMany(Borrowing::class);
+    }
 }

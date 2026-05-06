@@ -15,9 +15,20 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('borrowings.index')" :active="request()->routeIs('borrowings.index')">
+                        {{ Auth::user()->role === 'admin' ? 'Data Peminjaman' : 'Buku Pinjaman Saya' }}
+                    </x-nav-link>
+
+                    @if(Auth::user()->role === 'admin')
+                        <x-nav-link :href="route('library.index')" :active="request()->routeIs('library.*')">
+                            Data Buku Fisik
+                        </x-nav-link>
+                    @endif
                 </div>
             </div>
 
+            
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">

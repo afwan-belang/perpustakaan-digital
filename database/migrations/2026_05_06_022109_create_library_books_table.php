@@ -1,0 +1,30 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create('library_books', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->string('author');       // Nama Penulis
+            $table->string('publisher');    // Nama Penerbit
+            $table->year('published_year'); // Tahun Terbit
+            $table->integer('pages');       // Tebal Halaman
+            $table->text('description')->nullable();
+            $table->string('genre')->nullable();
+            $table->integer('stock')->default(0);
+            $table->string('path_cover')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('library_books');
+    }
+};

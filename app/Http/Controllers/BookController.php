@@ -50,6 +50,14 @@ class BookController extends Controller
 
         return redirect()->route('home')->with('success', 'Buku berhasil ditambahkan!');
     }
+
+  public function show(Book $book)
+    {
+        // Pastikan tampilan view ini mengarah ke file resources/views/books/show.blade.php
+        // yang sudah kita buat pada Fase 3 sebelumnya.
+        return view('books.show', compact('book'));
+    }
+
     // 3. Menampilkan Form Edit (Ambil data lama)
     public function edit($id)
     {
@@ -115,4 +123,8 @@ class BookController extends Controller
 
         return redirect()->route('home')->with('success', 'Buku berhasil dihapus!');
     }
+    /**
+     * Menampilkan halaman detail buku untuk dibaca (Digital) atau dipinjam (Fisik)
+     */
+  
 }
