@@ -4,4 +4,9 @@
 
 📚📚📚Tidak ada alasan untuk Tidak <b>membaca</b> 📚📚📚
 
-<h2>Fitur Aplikasi</h2>
+### 🚀 Fitur Unggulan
+
+- 🔐 **Secure Authentication** – Login & Register yang dilengkapi dengan verifikasi email dan reset password.
+- ⚡ **Real-time Dashboard** – Visualisasi data secara instan menggunakan Livewire dan Chart.js.
+- 📂 **Media Manager** – Manajemen file yang efisien dengan integrasi Amazon S3 atau local storage.
+- 🛠️ **Role-Based Access Control (RBAC)** – Pembagian izin akses user (Admin, Editor, Viewer) yang ketat.
