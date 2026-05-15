@@ -51,3 +51,11 @@ Antarmuka tingkat tinggi dengan pendekatan desain terkini:
 * **Storage:** Symlinked Local Disk Storage
 
 ---
+## 🎥 Video Demo
+
+https://github.com/user-attachments/assets/bf5126ff-42a4-4f91-95dd-2120e24c7f6b
+
+## 📸 Screen Shoot
+* **Landing Page**
+
+ 
