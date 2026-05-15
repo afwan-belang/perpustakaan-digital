@@ -72,17 +72,46 @@ https://github.com/user-attachments/assets/bf5126ff-42a4-4f91-95dd-2120e24c7f6b
 </table>
 
 ### 🔑 Role-Based Access Control
+
+* **Dashboard**
 | User Experience (Siswa) | Admin Dashboard (Pustakawan) |
 | :---: | :---: |
 | <img src="assets/images/Tampilan/User/Dashboard.png"> | <img src="assets/images/Tampilan/Admin/Dashboard.png"> |
 | *Dashboard yang menampilkan seluruh buku digital* | *Dashboard yang memberikan akses penuh CRUD ke pada Pustakawan* |
 
+* **Katalog Buku**
 | Katalog BUku(Siswa) | Data Buku (Pustakawan) |
 | :---: | :---: |
 | <img src="assets/images/Tampilan/User/KatalogBukuFisik.png"> | <img src="assets/images/Tampilan/Admin/DataBukuPerpustakaan.png"> |
 | *Katalog buku dengan opsi pinjam buku fisik* | *Panel manajemen stok, riwayat sirkulasi, & upload.* |
 
+* **Riwayat Peminjaman**
 | Riwayat Peminjaman (Siswa) | Riwayat Peminjaman (Pustakawan) |
 | :---: | :---: |
 | <img src="assets/images/Tampilan/User/RiwayatPeminjaman.png"> | <img src="assets/images/Tampilan/Admin/Riwayat Peminjaman.png"> |
 | *Riwayat peminjaman buku user* | *Monitoring seluruh riwayat peminjaman buku dari seluruh anggota* |
+
+* **Special Feature**
+| Add buku favorit (Siswa) | Tambahkan Buku (Pustakawan) |
+| :---: | :---: |
+| <img src="assets/images/Tampilan/User/FavoriteBook.png"> | <img src="assets/images/Tampilan/Admin/UploadBuku.png"> |
+| *Buku digital favorit bagi user* | *Akses penuh menambahkan data buku* |
+
+---
+
+## 👥 Tim Pengembang
+
+Projek **DigiLib SMK** ini dikembangkan dengan penuh dedikasi oleh **[Kelompok 10]** sebagai bagian dari [Project Laravel/KK 3(Pemrograman Web)/DigilibSMK(Perpustakaan Digital)]:
+
+| Absen | Nama Anggota | Peran |
+| :--- | :--- | :--- |
+| **22** | **[Muhammad Haikal Afwan]** | Lead Developer / Full Stack |
+| **23** | **[Muhammad Khoerudin]** | UI/UX Designer / Frontend |
+| **7** | **[Dhafin Naufal Ridwan]** | Idea Project / QA |
+
+---
+
+<p align="center">
+  Copyright &copy; 2026 <b>[Nama Kelompok Anda]</b>. <br>
+  Semua hak cipta dilindungi. Dibangun untuk kemajuan literasi sekolah.
+</p>
