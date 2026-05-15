@@ -108,6 +108,6 @@ Projek **DigiLib SMK** ini dikembangkan dengan penuh dedikasi oleh **[Kelompok 1
 ---
 
 <p align="center">
-  Copyright &copy; 2026 <b>[Nama Kelompok Anda]</b>. <br>
+  Copyright &copy; 2026 <b>[Kelompok 10]</b>. <br>
   Semua hak cipta dilindungi. Dibangun untuk kemajuan literasi sekolah.
 </p>
