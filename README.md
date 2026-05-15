@@ -61,22 +61,18 @@ https://github.com/user-attachments/assets/bf5126ff-42a4-4f91-95dd-2120e24c7f6b
  <table border="0">
   <tr>
     <td>
-      <p align="center"><b>Dashboard Admin</b></p>
-      <img src="assets/images/LandingPage.png" width="400">
+      <p align="center"><b>Landing Page/b></p>
+      <img src="assets/images/Landing Page/LandingPage1.png" width="400">
     </td>
     <td>
-      <p align="center"><b>Katalog User</b></p>
-      <img src="docs/screenshots/user-katalog.png" width="400">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><b>Detail Buku (Glassmorphism)</b></p>
-      <img src="docs/screenshots/book-detail.png" width="400">
-    </td>
-    <td>
-      <p align="center"><b>Riwayat Peminjaman</b></p>
-      <img src="docs/screenshots/history.png" width="400">
+      <p align="center"><b>Footer Landing Page</b></p>
+      <img src="assets/images/Landing Page/LandingPage2.png" width="400">
     </td>
   </tr>
 </table>
+
+### 🔑 Role-Based Access Control
+| User Experience (Siswa) | Admin Dashboard (Pustakawan) |
+| :---: | :---: |
+| <img src="assets/images/Tampilan/User/Dashboard.png" width="450"> | <img src="assets/images/Tampilan/Admin/Dashboard.png"> |
+| *Katalog buku dengan opsi pinjam & baca digital.* | *Panel manajemen stok, riwayat sirkulasi, & upload.* |
