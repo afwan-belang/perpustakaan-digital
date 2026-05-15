@@ -58,4 +58,25 @@ https://github.com/user-attachments/assets/bf5126ff-42a4-4f91-95dd-2120e24c7f6b
 ## 📸 Screen Shoot
 * **Landing Page**
 
- 
+ <table border="0">
+  <tr>
+    <td>
+      <p align="center"><b>Dashboard Admin</b></p>
+      <img src="assets/images/LandingPage.png" width="400">
+    </td>
+    <td>
+      <p align="center"><b>Katalog User</b></p>
+      <img src="docs/screenshots/user-katalog.png" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p align="center"><b>Detail Buku (Glassmorphism)</b></p>
+      <img src="docs/screenshots/book-detail.png" width="400">
+    </td>
+    <td>
+      <p align="center"><b>Riwayat Peminjaman</b></p>
+      <img src="docs/screenshots/history.png" width="400">
+    </td>
+  </tr>
+</table>
