@@ -79,19 +79,16 @@ https://github.com/user-attachments/assets/bf5126ff-42a4-4f91-95dd-2120e24c7f6b
 | <img src="assets/images/Tampilan/User/Dashboard.png"> | <img src="assets/images/Tampilan/Admin/Dashboard.png"> |
 | *Dashboard yang menampilkan seluruh buku digital* | *Dashboard yang memberikan akses penuh CRUD ke pada Pustakawan* |
 
-* **Katalog Buku**
 | Katalog BUku(Siswa) | Data Buku (Pustakawan) |
 | :---: | :---: |
 | <img src="assets/images/Tampilan/User/KatalogBukuFisik.png"> | <img src="assets/images/Tampilan/Admin/DataBukuPerpustakaan.png"> |
 | *Katalog buku dengan opsi pinjam buku fisik* | *Panel manajemen stok, riwayat sirkulasi, & upload.* |
 
-* **Riwayat Peminjaman**
 | Riwayat Peminjaman (Siswa) | Riwayat Peminjaman (Pustakawan) |
 | :---: | :---: |
 | <img src="assets/images/Tampilan/User/RiwayatPeminjaman.png"> | <img src="assets/images/Tampilan/Admin/Riwayat Peminjaman.png"> |
 | *Riwayat peminjaman buku user* | *Monitoring seluruh riwayat peminjaman buku dari seluruh anggota* |
 
-* **Special Feature**
 | Add buku favorit (Siswa) | Tambahkan Buku (Pustakawan) |
 | :---: | :---: |
 | <img src="assets/images/Tampilan/User/FavoriteBook.png"> | <img src="assets/images/Tampilan/Admin/UploadBuku.png"> |
