@@ -97,7 +97,7 @@ https://github.com/user-attachments/assets/bf5126ff-42a4-4f91-95dd-2120e24c7f6b
 
 ## 👥 Tim Pengembang
 
-Projek **DigiLib SMK** ini dikembangkan dengan penuh dedikasi oleh **[Kelompok 10]** sebagai bagian dari [Project Laravel/KK 3(Pemrograman Web)/DigilibSMK(Perpustakaan Digital)]:
+Projek **DigiLib SMK** ini dikembangkan dengan penuh dedikasi oleh **[Kelompok 10]** sebagai bagian dari [ Project Laravel / KK 3(Pemrograman Web) / DigilibSMK(Perpustakaan Digital) ]:
 
 | Absen | Nama Anggota | Peran |
 | :--- | :--- | :--- |
