@@ -73,7 +73,6 @@ https://github.com/user-attachments/assets/bf5126ff-42a4-4f91-95dd-2120e24c7f6b
 
 ### 🔑 Role-Based Access Control
 
-* **Dashboard**
 | User Experience (Siswa) | Admin Dashboard (Pustakawan) |
 | :---: | :---: |
 | <img src="assets/images/Tampilan/User/Dashboard.png"> | <img src="assets/images/Tampilan/Admin/Dashboard.png"> |
